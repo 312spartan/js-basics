@@ -15,6 +15,13 @@ while(true) {
 
 // To Display tasks
 console.log("Your To-do List:")
-tasks.forEach((task, index) => {
-    console.log(`${index + 1}, ${task}`);
-})
+
+for (let i = 0; 1 < tasks.length; i++) {
+    console.log(`${i + 1}, ${tasks[i]}`);
+}
+
+
+
+// tasks.forEach((task, index) => {
+//     console.log(`${index + 1}, ${task}`);
+// })
