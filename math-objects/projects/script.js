@@ -29,6 +29,9 @@ for (let i = 0; 1 < 1; i++) {
     rollDice();
 }
 
+rollDice();
+
+
 //display final score summary
 
 displayScores();
