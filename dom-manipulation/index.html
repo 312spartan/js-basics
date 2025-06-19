@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <!-- <script src="dom-manipulation.js"></script> -->
+        <style>
+            .highlight {
+                background-color: lime;
+                color: black;
+                font-weight: bold;
+                font-style: italic;
+                font-family:'Courier New', Courier, monospace;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+                border: 2px solid black;
+            }
+        </style>
+</head>
+<body>
+    <h1 id="main-heading">Welcome to my JavaScript Practice</h1>
+    <p class="description">I am not a paragraph at all.</p>
+    <p class="description">I am a paragraph actually.</p>
+    <p class="description">I am not a paragraph at all, only except I am.</p>
+    <button>Click!</button>
+    <button id="light">Light!</button>
+
+    <script>
+
+        function changeText() {
+    document.getElementById("main-heading").textContent =
+    'I really like the Shrek movies, but Spiderman was better.';
+}
+
+// console.log(document.getElementById("main-heading").textContent);
+
+        // const paragraphs = document.getElementsByClassName("description");
+        // // console.log("paragraphs =", paragraphs);
+        // console.log("paragraphs[1].textContent =", paragraphs[1].textContent);
+        // const buttons = document.getElementsByTagName("button");
+        // console.log("buttons =", buttons[0].textContent);
+
+        // const firstParagraph = document.querySelector(".description");
+        // console.log(firstParagraph.textContent);
+
+        // const allParagraphs = document.querySelectorAll(".description");
+        // allParagraphs.forEach((para) => console.log(para.textContent));
+
+        // MODIFY ELEMENTS
+        // const heading = document.getElementById("main-heading");
+        // heading.textContent = "I AM BRAND SPANKIN' NEW!";
+
+        // heading.innerHTML = "<span style='color: blue'>stylish</span>heading";
+
+        // heading.style.color = 'green';
+        // heading.style.fontSize = "24px";
+        // heading.style.textAlign = "center";
+
+        // // ADDING / REMOVING/ CREATING
+        // const newParagraph = document.createElement("p");
+        // newParagraph.textContent = "I am a new paragraph ya know?"
+        // document.body.appendChild(newParagraph);
+       
+        // const heading = document.getElementById("main-heading");
+        // heading.classList.add("highlight");
+
+        //  document.querySelector("button").addEventListener("click", function() {
+        //     // document.body.removeChild(newParagraph);
+        //     heading.classList.remove("highlight");
+
+            
+        // })
+
+        // document.querySelector("light").addEventListener("click", function() {
+        //         heading.classList.add("highlight");
+        //     }) TRIED TO ADD A BUTTON TO PUT IT BACK ON
+
+        const link = document.createElement("a")
+        link.setAttribute("href", "https://google.com");
+        link.setAttribute("target", "_blank");
+        link.textContent = "CHECK THIS OUT!";
+        document.body.appendChild(link);
+    </script>
+</body>
+</html>
